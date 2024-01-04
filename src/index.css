@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer reset, base, tokens, recipes, utilities;
+.title_navbar{
+font-size: 5rem;
+}
+.li_menu{
+  font-size: 3rem;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: antiquewhite;
+
+}
+.gg{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
+  gap: 10px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
