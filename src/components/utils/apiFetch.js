@@ -61,3 +61,13 @@ export const getFeaturedImage = (postId, posts, featuredImages) => {
   return featuredImage?.source_url || '';
 };
 
+// récupération d'un article par id 
+
+export const fetchPostsById = async(postId)=>{
+  try{
+    const response= axios.get(`http://localhost/wp-back/wp-test/wordpress/wp-json/wp/v2/posts/${postId}`)
+    return response.data
+  }catch(error){
+    console.error('erreur fetch id article',error)
+  }
+}

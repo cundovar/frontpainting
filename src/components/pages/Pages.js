@@ -10,7 +10,8 @@ const Pages = () => {
   return (
     <>
      <Navbar/>
-        <div className="ml-28 ">
+        <div className=" flex justify-end ">
+          <div className="w-5/6">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
@@ -19,6 +20,7 @@ const Pages = () => {
         <Route path="/posts/:id" element={<Single/>} />
 
       </Routes>
+      </div>
         </div>
     </>
   );

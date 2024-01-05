@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer reset, base, tokens, recipes, utilities;
+
+@import './components/component_page/home/css/effectPaint.css';
 .title_navbar{
 font-size: 5rem;
 }
@@ -30,3 +33,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

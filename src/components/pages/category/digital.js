@@ -55,7 +55,7 @@ const Digital=()=>{
     return (
    
   
-  <div className="grid gg grid-cols-3 gap-10">
+  <section className=" w-4/5 m-auto flex justify-between align-middle flex-wrap gap-10">
         {postPeinture ? (
           postPeinture.map((post) => (
             <div key={post.id} className="card p-3 shadow-lg">
@@ -76,9 +76,9 @@ const Digital=()=>{
               </div>
           ))
         ) : (
-          "loading...."
+          "loading...." 
         )}
-      </div>
+      </section>
          
              
     );

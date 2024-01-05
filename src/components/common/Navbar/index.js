@@ -20,8 +20,8 @@ const Navbar=()=>{
         <div className="title_navbar">cundo docun</div>
          </div>
          <div>
-          <div className="absolute">
-          <ul className=" gap-5 bg-stone-500 w-56 flex flex-col items-center ">
+          <div className="absolute w-1/6">
+          <ul className=" gap-5 bg-stone-500  flex flex-col items-center ">
             <li className="li_menu"><Link to='/'>accueil</Link> </li>
             <li className="li_menu"><Link to='/posts'>posts</Link> </li>
             <li className="li_menu"><Link to='/digital'>digital</Link> </li>

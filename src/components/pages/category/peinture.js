@@ -53,7 +53,7 @@ const getFeaturedImage = (postId) => {
 
  
   return (
-    <div className="ml-96">
+    <div className="">
 
 <div className=" w-4/5 m-auto flex justify-between align-middle flex-wrap gap-10">
       {Object.keys(postPeinture).length
