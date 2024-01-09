@@ -10,10 +10,10 @@ const Home =()=>{
 
     return(
         <div className="">
-        <EffectPaint/>
-        <Presentation/>
-        <Effectpaint2/>
         <EffectPaint3/>
+      
+        <Presentation/>
+        
         </div>
     )
 }

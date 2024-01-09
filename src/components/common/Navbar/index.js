@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EffectPaint from "../../component_page/home/effectPaint";
 
 
 
@@ -16,7 +17,8 @@ const Navbar=()=>{
 
     return(
       <>
-         <div className="p-5 flex justify-end bg-red-400 h-full ">
+         <div className="p-5 gridNav bg-red-400 h-full ">
+         <EffectPaint/>
         <div className="title_navbar">cundo docun</div>
          </div>
          <div>

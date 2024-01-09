@@ -43,11 +43,11 @@ const EffectPaint = () => {
   return (
     <>
       <div className="   main_effect">
-        <div className="main w-full ">
+        <div className="main ">
           <article className="container">
             <div
               ref={carouselRefs[0]}
-              className="w-36 h-36 carousel"
+              className="carousel"
               id="carousel1"
             >
               <img
@@ -85,32 +85,32 @@ const EffectPaint = () => {
           <article className="container">
             <div
            ref={carouselRefs[1]}
-              className="w-36 h-36 carousel"
+              className="carousel"
               id="carousel2"
             >
               <img
-                className="w-full h-full object-cover item front"
+                className=" object-cover item front"
                 src="./images/page_home/cube2/5.jpg"
                 alt="image_home"
               />
               <img
-                className="w-full h-full object-cover item right"
+                className=" object-cover item right"
                 src="./images/page_home/cube2/6.jpg"
                 alt="image_home"
               />
               <img
-                className="w-full h-full object-cover item back"
+                className=" object-cover item back"
                 src="./images/page_home/cube2/7.jpg"
                 alt="image_home"
               />
               <img
-                className="w-full h-full object-cover item bottom"
+                className=" object-cover item bottom"
                 src="./images/page_home/cube2/8.jpg"
                 alt="image_home"
               />
             </div>
           </article>
-          <article className="container">
+          {/* <article className="container">
             <div
               ref={carouselRefs[2]}
               className="w-36 h-36 carousel"
@@ -186,7 +186,7 @@ const EffectPaint = () => {
               />
             </div>
           </article>
-         
+          */}
         </div>
       </div>
     </>
