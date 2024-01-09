@@ -5,13 +5,19 @@
 
 @layer reset, base, tokens, recipes, utilities;
 
-@import './components/component_page/home/css/effectPaint.css';
+
 .title_navbar{
 font-size: 5rem;
 }
 .li_menu{
   font-size: 3rem;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -34,4 +40,268 @@ code {
     monospace;
 }
 
+
+/* animation */
+.main_effect{
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+
+ 
+  display: -webkit-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.main{
+margin: auto;
+    display: grid;
+          grid-template-columns: repeat(4, 1fr);
+      
+          text-align: center;
+}
+*{
+  border: 1px solid red;
+}
+.container {
+ 
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 2rem;
+}
+
+.carousel {
+  border: 5px solid rgb(240, 240, 240);
+/*   transform: rotateY(-360deg); */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: lightblue;
+  opacity:1;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 3em;
+  text-align: center;
+  
+}
+
+
+
+.front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+ 
+}
+.left {
+  transform: rotateY(270deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(100px) translateY(0px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) rotateZ(-90deg) translateZ(100px);
+
+}
+.back_back{
+  transform: rotateY(360deg) translateZ(100px);
+}
+
+/* //efect 3 */
+
+:root {
+  --base-color: #3f3352;
+  --overlayH: 263;
+  --overlayS: 23%;
+  --overlayL: 26%;
+}
+
+img,
+a {
+  display: block;
+  height: 100%;
+}
+.main2{
+  max-width: 1400px;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+
+}
+@media (min-width: 800px) {
+  main {
+    gap: 2rem;
+  }
+}
+
+
+
+.mainMain{
+
+  padding: 1rem;
+  margin: 0;
+  height: 10rem;
+  border: 6px solid green;
+
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid{
+  display: grid;
+  grid-gap:1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(16rem,max-content);
+  position: relative;
+
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid article {
+  --max: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+article:first-child p:last-of-type {
+  margin: 0;
+}
+.description {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1rem, 2.5vmin, 2.25rem);
+}
+
+article:not(.details) button,
+article:first-child button {
+  display: none;
+}
+
+article.details {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.description {
+  background: linear-gradient(
+    0deg,
+    hsl(var(--overlayH), var(--overlayS), var(--overlayL), calc(1 * var(--max)))
+      0%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.738 * var(--max))
+      )
+      19%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.541 * var(--max))
+      )
+      34%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.382 * var(--max))
+      )
+      47%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.278 * var(--max))
+      )
+      56.5%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.194 * var(--max))
+      )
+      65%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.126 * var(--max))
+      )
+      73%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.075 * var(--max))
+      )
+      80.2%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.042 * var(--max))
+      )
+      86.1%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.021 * var(--max))
+      )
+      91%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.008 * var(--max))
+      )
+      95.2%,
+    hsla(
+        var(--overlayH),
+        var(--overlayS),
+        var(--overlayL),
+        calc(0.002 * var(--max))
+      )
+      98.2%,
+    hsla(var(--overlayH), var(--overlayS), var(--overlayL), 0) 100%
+  );
+}
+
+.details-view {
+  color: white;
+  opacity: 0;
+  transform: translateY(100%);
+}
 

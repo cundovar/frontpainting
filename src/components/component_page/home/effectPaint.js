@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 
 const EffectPaint = () => {
-    const carouselRefs = [useRef(null), useRef(null), useRef(null),useRef(null), useRef(null), useRef(null)];
+    const carouselRefs = [useRef(null), useRef(null), useRef(null),useRef(null)];
 
     useEffect(() => {
       const carousels = carouselRefs.map((ref) => ref.current);
@@ -42,8 +42,8 @@ const EffectPaint = () => {
 
   return (
     <>
-      <div className="w-full  flex main_effect bg-red-500">
-        <div className="main">
+      <div className="   main_effect">
+        <div className="main w-full ">
           <article className="container">
             <div
               ref={carouselRefs[0]}
@@ -186,72 +186,7 @@ const EffectPaint = () => {
               />
             </div>
           </article>
-          <article className="container">
-            <div
-           ref={carouselRefs[4]}
-              className="w-36 h-36 carousel"
-              id="carousel2"
-            >
-              <img
-                className="w-full h-full object-cover item front"
-                src="./images/page_home/cube2/5.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item right"
-                src="./images/page_home/cube2/6.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item back"
-                src="./images/page_home/cube2/7.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item bottom"
-                src="./images/page_home/cube2/8.jpg"
-                alt="image_home"
-              />
-            </div>
-          </article>
-          <article className="container">
-            <div
-              ref={carouselRefs[5]}
-              className="w-36 h-36 carousel"
-              id="carousel1"
-            >
-              <img
-                className="w-full h-full object-cover item front"
-                src="./images/page_home/cube1/1.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item right"
-                src="./images/page_home/cube1/2.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item back"
-                src="./images/page_home/cube1/3.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item bottom"
-                src="./images/page_home/cube1/4.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item  left"
-                src="./images/page_home/cube1/4.jpg"
-                alt="image_home"
-              />
-              <img
-                className="w-full h-full object-cover item top "
-                src="./images/page_home/cube1/4.jpg"
-                alt="image_home"
-              />
-            </div>
-          </article>
+         
         </div>
       </div>
     </>

@@ -6,6 +6,7 @@ import { Routes,Route } from 'react-router-dom';
 import Single from "../Single";
 import Digital from "./category/digital";
 import Peinture from "./category/peinture";
+import Contact from "./contact/contact";
 const Pages = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Pages = () => {
         <Route path="/peinture" element={<Peinture />} />
         <Route path="/digital" element={<Digital />} />
         <Route path="/posts/:id" element={<Single/>} />
+        <Route path="/contact" element={<Contact/>} />
 
       </Routes>
       </div>

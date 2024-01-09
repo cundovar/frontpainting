@@ -26,11 +26,7 @@ const Navbar=()=>{
             <li className="li_menu"><Link to='/posts'>posts</Link> </li>
             <li className="li_menu"><Link to='/digital'>digital</Link> </li>
             <li className="li_menu"><Link to='/peinture'>peinture</Link> </li>
-          
-
-        
-          
-            <li className="li_menu">contact</li>
+            <li className="li_menu"><Link to='/contact'></Link> </li>
           </ul>
      
 
