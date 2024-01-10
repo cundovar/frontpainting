@@ -24,10 +24,15 @@ const EffectPaint = () => {
           ease: "Power1.easeInOut"
           },
           onUpdate: () => {
-            gsap.set(carousel, {
-            
-              transform: `rotateX(${rots.x}deg) rotateY(${rots.y}deg) rotateZ(${rots.z}deg)`
-            });
+
+          // if car  erreur gsap carousel not found a l'infinie
+            if(carousel){
+              gsap.set(carousel, {
+              
+                transform: `rotateX(${rots.x}deg) rotateY(${rots.y}deg) rotateZ(${rots.z}deg)`
+              });
+
+            }
           }
         })
           .to(rots, { y: -90 }) //right

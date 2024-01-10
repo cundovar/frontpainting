@@ -21,6 +21,12 @@ const Contact=()=>{
         event.preventDefault()
         // Envoyer les données au backend WordPress ici
         DataToWordpress(data)
+
+        // Réinitialisation formulaire si nécessaire
+    setData({
+      name: "",
+      message: ""
+    })
     }
 
 

@@ -1,0 +1,82 @@
+/* animation */
+.main_effect{
+
+ 
+    display: -webkit-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .main{
+  margin: auto;
+      display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        gap: 20;
+            text-align: center;
+  }
+  /* *{
+    border: 1px solid red;
+  } */
+  .container div img{
+    height: 5rem;
+    width: 5rem;
+  }
+  .container {
+   
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+    margin: 1rem;
+  }
+  
+  .carousel {
+    border: 5px solid rgb(53, 13, 13);
+  /*   transform: rotateY(-360deg); */
+  width: 5rem;
+  height: 5rem;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  .item {
+    display: block;
+    position: absolute;
+    background: lightblue;
+    opacity:1;
+    
+  
+    
+  }
+  
+  
+  
+  .front {
+    transform: rotateY(0deg) translateZ(2rem)
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(2rem);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(2rem);
+   
+  }
+  .left {
+    transform: rotateY(270deg) translateZ(2rem);
+  }
+  
+  .top {
+    transform: rotateX(90deg) rotateZ(90deg) translateZ(2rem) translateY(0px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) rotateZ(-90deg) translateZ(2rem);
+  
+  }
+  .back_back{
+    transform: rotateY(360deg) translateZ(2rem);
+  }
+  
+  

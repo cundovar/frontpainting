@@ -10,10 +10,13 @@ const Home =()=>{
 
     return(
         <div className="">
+            <div className="relative z-10 ">
         <EffectPaint3/>
-      
+
+            </div>
+            <div className="relative z-0">
         <Presentation/>
-        
+        </div>
         </div>
     )
 }

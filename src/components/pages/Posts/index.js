@@ -59,7 +59,7 @@ const Posts = () => {
         <SearchBar />
       </div>
       <div className="text-2xl font-bold">posts</div>
-      <div className="gg gap-10">
+      <div className="flex flex-wrap items-center justify-center gap-10">
         {Object.keys(posts).length
           ? posts.map((post) => {
               return (

@@ -17,18 +17,23 @@ const Navbar=()=>{
 
     return(
       <>
-         <div className="p-5 gridNav bg-red-400 h-full ">
+         <div className="p-5 gridNav ">
          <EffectPaint/>
-        <div className="title_navbar">cundo docun</div>
+        <div className="title_navbar flex  justify-end">
+          <div>
+          cundo docun
+
+          </div>
+          </div>
          </div>
          <div>
           <div className="absolute w-1/6">
-          <ul className=" gap-5 bg-stone-500  flex flex-col items-center ">
+          <ul className=" gap-5  flex flex-col items-center ">
             <li className="li_menu"><Link to='/'>accueil</Link> </li>
             <li className="li_menu"><Link to='/posts'>posts</Link> </li>
             <li className="li_menu"><Link to='/digital'>digital</Link> </li>
             <li className="li_menu"><Link to='/peinture'>peinture</Link> </li>
-            <li className="li_menu"><Link to='/contact'></Link> </li>
+            <li className="li_menu"><Link to='/contact'>contact</Link> </li>
           </ul>
      
 
